@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<style>
+    body{
+        background-color: white;
+        font-family: sans-serif;
+    }
+    .form{
+        width:400px;
+        margin:auto;
+        padding-top:40px;
+    }
+    .card{
+        box-shadow:1px 1px 5px white;
+        background-color: white;
+        padding:30px;
+        border-radius:5px;
+    }
+    .top{
+        text-align:center;
+    }
+    .img{
+        border-radius:50px;
+        width:100px;
+        box-shadow:10px 10px 10px #808080;
+    }
+    .text{
+        color:dodgerblue;
+    }
+    .group > label{
+        width:100%;
+        color: rgb(75,75,75);
+        display:block;
+    }
+    .group > input{
+        border-radius:5px;
+        outline:0;
+        width:100%;
+        height:25px;
+        padding:5px;
+    }
+    .group{
+        margin-bottom:10px;
+    }
+    .btn {
+        background-color:dodgerblue;
+        width: 90%;
+        border-radius: 30px;
+        padding: 15px;
+        color: white;
+        border: none;
+        outline: none;
+    }
+</style>
+    <form class="form" action="Retorno" method="post">
+        <div class="card">
+            <div class="top">
+                <img class="img" src="https://cdn-icons-png.flaticon.com/512/17/17004.png"/>
+                <h2 class="text">Fazer Login</h2>
+                <div class="group">
+                    <label>Email</label>
+                    <input type="email" name="Login"placeholder="Digite seu email" required/>
+                </div>
+                <div class="group">
+                    <label>Senha</label>
+                    <input type="password" name="senha"placeholder="Digite sua senha" required/>
+                </div>
+                <div class="group">
+                    <label><input type="checkbox">Lembre-me</label>
+                </div>
+                <div class="group btn">
+                    <button type="submit" class="SubmitButtonClass" style="background-color:dodgerblue;border:none;" value="">Acessar</button>
+                </div>
+            </div>
+        </div>
+    </form>
